@@ -62,6 +62,9 @@ gke-cluster-2-default-pool-f8543da3-xzjh   Ready     <none>    1d        v1.8.8-
 kubectl replace --force  -f selenium-node-chrome-rc.yaml
 ## expand selenium grid
 kubectl scale rc selenium-node-chrome --replicas=7
+## tip
+* Q: selenium grid warn: wait for a slot to be free 
+* A: into pod and command "python" and "call web driver" and "driver.quit()", then all the browsers have closed
 
 ---
 grid/console
