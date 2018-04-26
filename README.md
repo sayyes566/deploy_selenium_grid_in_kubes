@@ -64,6 +64,9 @@ kubectl replace --force  -f selenium-node-chrome-rc.yaml
 kubectl scale rc selenium-node-chrome --replicas=7
 
 grid/console
-http://${selenium_hub_ip}:4444/grid/console
+
+* <http://${selenium_hub_ip}:4444/grid/console> 
+
 log
-http://${selenium_hub_ip}:4444/wd/hub
+
+* <http://${selenium_hub_ip}:4444/wd/hub>
