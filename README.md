@@ -19,7 +19,7 @@ in gcp :
 ## install selenium python package 
 8. kubectl exec --stdin=true --tty=true $PODNAME -- pip install selenium
 ## run test case
-9. kubectl exec --stdin=true --tty=true $PODNAME -- python test2.py --driverip=${driverip} --testurl=http://${testurl}/test.php
+9. kubectl exec --stdin=true --tty=true $PODNAME -- python test.py --driverip=${driverip} --testurl=http://${testurl}/test.php
 
 
 ## example:
