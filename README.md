@@ -63,6 +63,7 @@ kubectl replace --force  -f selenium-node-chrome-rc.yaml
 ## expand selenium grid
 kubectl scale rc selenium-node-chrome --replicas=7
 
+---
 grid/console
 
 * <http://${selenium_hub_ip}:4444/grid/console> 
